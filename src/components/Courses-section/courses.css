@@ -1,0 +1,162 @@
+.single__course__item {
+  padding: 1rem;
+  width: 100%;
+  height: 600px;
+  /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.course__img img {
+  height: 200px;
+  /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.course__details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.enroll a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #17bf9e;
+  border-radius: 10px;
+  padding: .2rem;
+}
+
+.lesson,
+.students,
+.rating {
+  font-size: 0.9rem;
+  color: #0a2b1e;
+  font-weight: 500;
+}
+
+.lesson i,
+.students i,
+.rating i {
+  font-weight: 400;
+}
+
+.course__title {
+  line-height: 2rem;
+}
+
+.course__top__left h2 {
+  font-weight: 600;
+}
+
+/* ============Nikhil =========*/
+.single__course__item {
+  padding: 1rem;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  /* Enables 3D transform */
+  perspective: 1000px;
+  /* Perspective depth */
+  border: 1px solid black;
+}
+
+.single__course__item:hover {
+  transform: rotateY(15deg) scale(1.05);
+  /* 3D tilt and scaling */
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.course__img img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  /* Smooth image transition */
+}
+
+.single__course__item:hover .course__img img {
+  transform: scale(1.1) rotate(2deg);
+  /* Slight zoom and tilt on image */
+}
+
+.course__details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s ease;
+}
+
+.single__course__item:hover .course__details {
+  transform: translateZ(20px);
+  /* Content moves forward in 3D */
+}
+
+.enroll a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #17bf9e;
+}
+
+.lesson,
+.students,
+.rating {
+  font-size: 0.9rem;
+  color: #0a2b1e;
+  font-weight: 500;
+}
+
+.lesson i,
+.students i,
+.rating i {
+  font-weight: 400;
+}
+
+.course__title {
+  line-height: 2rem;
+}
+
+.course__top__left h2 {
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #17bf9e;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0a2b1e;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.single__course__item {
+  animation: fadeInUp 0.6s ease forwards;
+}

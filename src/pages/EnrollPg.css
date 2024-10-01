@@ -1,0 +1,44 @@
+.enroll-page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.course-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.course-details {
+  margin: 10px 0;
+}
+
+.course-image {
+  width: 800px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.enroll-button,
+.home-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.enroll-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.home-button {
+  background-color: #008CBA;
+  color: white;
+}
